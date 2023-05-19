@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.cyn {
+  background-color: hsl(184, 100%, 22%);
+}
+.v-cyn {
+  background-color: hsl(179, 100%, 13%);
+}
+.orange-c {
+  color: hsl(31, 77%, 52%);
+}
+.cyn-c {
+  color: hsl(184, 100%, 22%);
+}
+.v-cyn-c {
+  color: hsl(179, 100%, 13%);
+}
+/*------------main----------*/
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+ min-height: 60%;
+  max-width: 52rem;
+  min-width: 55%;
+  display: flex;
+  color: white;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.box {
+  display: grid;
+  justify-content: center;
+  align-items: space-between;
+  padding-inline: 3rem;
+
+}
+.icon {
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+}
+.icon-sedan {
+  background-image: url(/images/icon-sedans.svg);
+}
+.icon-suv {
+  background-image: url(/images/icon-suvs.svg);
+}
+.icon-luxury {
+  background-image: url(/images/icon-sedans.svg);
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+.btn {
+  cursor: pointer;
+  width: 75%;
+  height: 3rem;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+.btn:hover {
+  background: transparent;
+  color: white;
+}
+
+/*-------MOBILE VIEW----*/
+@media (max-width:375px) {
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  .box{
+    height: 25rem;
+  }
+  
+}
